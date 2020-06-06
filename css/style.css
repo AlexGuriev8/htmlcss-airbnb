@@ -1,0 +1,65 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  padding: 5%;
+  background-color: #ffffff;
+}
+main{
+  height: 50vh;
+  padding: 5%;
+}
+/*general container*/
+.container{
+  margin:auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.layover{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba( 0, 0, 0, 0.3);
+}
+.image{
+  border: 5px solid #ffffff;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #ffff;
+}
+
+.rome{
+  background-image: url(../img/rome.jpg);
+}
+.copenhagen {
+  background-image: url(../img/copenhagen.jpg);
+}
+.tokyo {
+  background-image: url(../img/tokyo.jpg);
+}
+
+.image .city{
+  color: #ffffff;
+  font-size: 10vh;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #000000;
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container:hover .image{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+}
+.image:hover .layover{
+  background-color: rgba(0, 0, 0, 0);
+}
